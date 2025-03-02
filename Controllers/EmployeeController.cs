@@ -101,7 +101,6 @@ namespace EmployeeManagmentSystem.Controllers
             return RedirectToAction("Index", "Employee");
         }
 
-        [HttpGet]
         public IActionResult Delete(int id)
         {
             var employee = _context.Employees.Find(id);
@@ -111,11 +110,24 @@ namespace EmployeeManagmentSystem.Controllers
                 return RedirectToAction("Index", "Employee");
             }
 
+            return View(employee); 
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var employee = _context.Employees.Find(id);
+
+            if (employee == null)
+            {
+                return RedirectToAction("Index");
+            }
+
             _context.Employees.Remove(employee);
+            _context.SaveChanges();
 
-            _context.SaveChanges(true);
-
-            return RedirectToAction("Index", "Employee");
+            return RedirectToAction("Index");
         }
 
     }

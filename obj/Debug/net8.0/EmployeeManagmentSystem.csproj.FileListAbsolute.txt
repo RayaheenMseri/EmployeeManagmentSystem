@@ -185,3 +185,4 @@ C:\Users\HUAWEI\source\repos\EmployeeManagmentSystem\EmployeeManagmentSystem\bin
 C:\Users\HUAWEI\source\repos\EmployeeManagmentSystem\EmployeeManagmentSystem\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\HUAWEI\source\repos\EmployeeManagmentSystem\EmployeeManagmentSystem\obj\Debug\net8.0\EmployeeManagmentSystem.genruntimeconfig.cache
 C:\Users\HUAWEI\source\repos\EmployeeManagmentSystem\EmployeeManagmentSystem\obj\Debug\net8.0\ref\EmployeeManagmentSystem.dll
+C:\Users\HUAWEI\source\repos\EmployeeManagmentSystem\EmployeeManagmentSystem\obj\Debug\net8.0\EmployeeManagmentSystem.sourcelink.json
